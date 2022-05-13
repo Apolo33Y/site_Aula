@@ -1,0 +1,33 @@
+body{
+    background-color :rgba(112, 112, 112, 0.918);
+    color: rgb(0, 0, 0) ;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.div1{
+    font-size: 25px;
+    color: black;
+    background-color: purple;
+width: 150px;
+height: 150px;
+margin: 5px;
+padding: 8px    ;
+}
+
+.div2{
+    font-size: 25px;
+    color: black;
+    background-color: purple;
+width: 150px;
+height: 150px;
+margin: 5px;
+padding: 8px;
+}
+#matriz{
+    background-color: #ffff;
+    color: black;
+display: flex;
+height: 200px;
+width: 500px;
+}
