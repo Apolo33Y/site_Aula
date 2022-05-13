@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,700;1,300&family=Montserrat:wght@100&family=Poppins&family=Roboto+Slab:wght@600&family=Roboto:ital,wght@1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 0, 255);
+}
+
+#menu ul{
+    margin: 0;
+    list-style: none;
+    background-color: #101111;   
+    height: 50px;
+    padding-top: 10px;
+}
+
+#menu ul li{
+    display: inline ;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Redressed', sans-serif;
+     /*top right bottom left*/
+     padding: 10px 10px;
+}
+
+#menu ul li a:hover{
+    color: rgb(152, 0, 253);
+    /* tipos de ponteiros: crosshair, wait, pointer */
+    cursor:  pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#textos {
+    font-family: 'Redressed', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Configurações padrões da página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-galeria{
+    display: grid; 
+    /* display: grid; organiza em tabela */
+    grid-template-columns: repeat(6, 1fr);
+    /* coloca quantas linhas de colunas verticais/horizontais vc quer e a distancia entre elas */
+    grid-template-rows: 300px;
+    /* organiza as linhas */
+    gap: 5px;
+    /* Distância definitiva entre os elementos */
+}
+
+.item-galeria{
+    position: relative  ; 
+    /* se posiciona referente ao elemento mais perto */
+}
+
+.item-galeria .img-galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Organiza o elemento dentro do espaço */
+}
+
+.item-galeria .titulo-galeria{
+    	position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        left: 0;
+        bottom: 0   ;
+        color: #fff;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+}
+
+.h-1{
+    grid-row: span 1;
+    /* grid-row serve para datermina o espaço vertical e na horizontal */
+}
+
+.h-2{
+    grid-row: span 2;
+    /* grid-row serve para datermina o espaço vertical e na horizontal */
+}
+
+.w-1{
+    grid-column: span 1;
+    /* define o espaço entre as colunas */
+}
+
+.w-2{
+    grid-column: span 2;
+    /* define o espaço entre as colunas */
+}
+
+
+@media (max-widht:768px){
+    .container-galeria{
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: 50vh;
+        /* vh e wh = se ajusta ao tamanho da tela da media ( determina o número de pixels) */
+    }
+    .h-2{
+        grid-row: span 1  ;
+    }
+    .w-2{
+        grid-column: span 1;
+    }
+}
+/* Ajusta a tela do usuário */

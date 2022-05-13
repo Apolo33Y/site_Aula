@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 248, 248);
+}
+
+#menu ul{
+    margin: 0;
+    list-style: none;
+    background-color: #010202;   
+    height: 50px;
+    padding-top: 10px;
+}
+
+#menu ul li{
+    display: inline ;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Redressed', sans-serif;
+     /*top right bottom left*/
+     padding: 10px 10px;
+}
+
+#menu ul li a:hover{
+    color: rgb(152, 0, 253);
+    /* tipos de ponteiros: crosshair, wait, pointer */
+    cursor:  pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#textos {
+    font-family: 'Redressed', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
